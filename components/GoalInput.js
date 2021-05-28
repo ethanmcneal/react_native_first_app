@@ -10,6 +10,9 @@ const change = (enteredText) => {
   }
 
 const addGoalHandler = () => {
+    if(enteredGoal.length < 1){
+        return;
+    }
     props.addGoalHandler(enteredGoal)
     setEnteredGoal('')
 }
